@@ -1,0 +1,34 @@
+curl "https://projects.propublica.org/congress/assets/staffers/2017Q2-house-disburse-detail.csv" > 2017Q2-house-disburse-detail.csv
+
+head -n 1 2017Q2-house-disburse-detail.csv
+
+tail -n 1 2017Q2-house-disburse-detail.csv
+
+cat 2017Q2-house-disburse-detail.csv | wc -l
+
+cat 2017Q2-house-disburse-detail.csv | grep -i technology | wc -l
+
+#Command Line 5
+wget https://projects.propublica.org/congress/assets/staffers/2017Q1-house-disburse-detail.csv
+
+head 2017Q1-house-disburse-detail.csv
+wc -l 2017Q1-house-disburse-detail.csv
+
+cat 2017Q1-house-disburse-detail.csv | grep WATER
+
+curl "https://projects.propublica.org/congress/assets/staffers/2017Q1-house-disburse-detail.csv" | egrep -i "water|bioguide" > water.txt
+
+cat water.txt| csvstat
+
+
+curl -N "https://projects.propublica.org/congress/assets/staffers/2017Q1-house-disburse-detail.csv" | ./filter.py > expensive_water.csv
+
+cat expensive_water.csv | csvstat > expensive_water_summary.txt
+
+## Chief of Staff
+curl -N "https://projects.propublica.org/congress/assets/staffers/2017Q1-house-disburse-detail.csv" | ./chief.py > output.csv
+
+cat output.csv | csvstat > description.txt
+subl description.txt
+
+cat description.txt | slackcat -s -c assignments
