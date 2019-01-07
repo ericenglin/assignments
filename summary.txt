@@ -1,0 +1,13 @@
+  1. "  1. "BIOGUIDE_ID""
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Unique values:         99
+	Longest value:         72 characters
+	Most common values:    None (30x)
+	                       	Contains null values:  False (11x)
+	                       	Type of data:          Text (8x)
+	                       	Unique values:         1 (5x)
+	                       	Contains null values:  True (excluded from calculations) (4x)
+
+Row count: 165

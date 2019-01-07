@@ -1,0 +1,162 @@
+  1. "BIOGUIDE_ID"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Unique values:         468
+	Longest value:         7 characters
+	Most common values:    None (32x)
+	                       G000553 (4x)
+	                       H000324 (4x)
+	                       K000376 (4x)
+	                       M001182 (4x)
+
+  2. "OFFICE"
+
+	Type of data:          Text
+	Contains null values:  False
+	Unique values:         481
+	Longest value:         35 characters
+	Most common values:    OFFICE OF THE MINORITY LEADER (8x)
+	                       HON. AL GREEN (4x)
+	                       HON. ALCEE L. HASTINGS (4x)
+	                       HON. MICK MULVANEY (4x)
+	                       HON. NANCY PELOSI (4x)
+
+  3. "QUARTER"
+
+	Type of data:          Text
+	Contains null values:  False
+	Unique values:         1
+	Longest value:         6 characters
+	Most common values:    2017Q1 (886x)
+
+  4. "PROGRAM"
+
+	Type of data:          Text
+	Contains null values:  False
+	Unique values:         4
+	Longest value:         30 characters
+	Most common values:    OFFICIAL EXPENSES OF MEMBERS (854x)
+	                       GENERAL EXPENDITURES (29x)
+	                       SALARIES  OFFICERS & EMPLOYEES (2x)
+	                       PERSONNEL (1x)
+
+  5. "CATEGORY"
+
+	Type of data:          Text
+	Contains null values:  False
+	Unique values:         1
+	Longest value:         22 characters
+	Most common values:    PERSONNEL COMPENSATION (886x)
+
+  6. "DATE"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Unique values:         1
+	Most common values:    None (886x)
+
+  7. "TRANSCODE"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Unique values:         1
+	Most common values:    None (886x)
+
+  8. "RECORDID"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Unique values:         1
+	Most common values:    None (886x)
+
+  9. "PAYEE"
+
+	Type of data:          Text
+	Contains null values:  False
+	Unique values:         492
+	Longest value:         25 characters
+	Most common values:    EDMONSON ROBERT D (6x)
+	                       BARTON STACY P (4x)
+	                       PORTER AMY M. (4x)
+	                       KEATING KATHERINE E. (3x)
+	                       MCCLUSKIE SEAN E (3x)
+
+ 10. "START DATE"
+
+	Type of data:          Date
+	Contains null values:  False
+	Unique values:         17
+	Smallest value:        2016-09-01
+	Largest value:         2017-03-13
+	Most common values:    2017-01-03 (430x)
+	                       2017-01-01 (417x)
+	                       2016-12-01 (11x)
+	                       2017-02-01 (8x)
+	                       2016-11-01 (3x)
+
+ 11. "END DATE"
+
+	Type of data:          Date
+	Contains null values:  False
+	Unique values:         21
+	Smallest value:        2016-09-21
+	Largest value:         2017-03-31
+	Most common values:    2017-03-31 (432x)
+	                       2017-01-02 (427x)
+	                       2017-01-30 (7x)
+	                       2017-02-05 (2x)
+	                       2017-02-28 (2x)
+
+ 12. "PURPOSE"
+
+	Type of data:          Text
+	Contains null values:  False
+	Unique values:         1
+	Longest value:         14 characters
+	Most common values:    CHIEF OF STAFF (886x)
+
+ 13. "AMOUNT"
+
+	Type of data:          Number
+	Contains null values:  False
+	Unique values:         406
+	Smallest value:        -5444.44
+	Largest value:         43125
+	Sum:                   15056738.31
+	Mean:                  16994.061298
+	Median:                7445.05
+	StDev:                 17089.612576
+	Most common values:    935.62 (101x)
+	                       41167.13 (63x)
+	                       29333.33 (23x)
+	                       666.67 (20x)
+	                       34222.23 (20x)
+
+ 14. "YEAR"
+
+	Type of data:          Number
+	Contains null values:  False
+	Unique values:         2
+	Smallest value:        2016
+	Largest value:         2017
+	Sum:                   1787060
+	Mean:                  2016.997743
+	Median:                2017
+	StDev:                 0.047485
+	Most common values:    2017 (884x)
+	                       2016 (2x)
+
+ 15. "RECIP (orig.)"
+
+	Type of data:          Text
+	Contains null values:  False
+	Unique values:         492
+	Longest value:         25 characters
+	Most common values:    EDMONSON ROBERT D (6x)
+	                       BARTON STACY P (4x)
+	                       PORTER AMY M. (4x)
+	                       KEATING KATHERINE E. (3x)
+	                       MCCLUSKIE SEAN E (3x)
+
+Row count: 886
