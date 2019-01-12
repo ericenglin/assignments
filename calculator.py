@@ -25,3 +25,27 @@ def divide(a,b):
 print("I'm going use the calculator functions to multiply 5 and 6")
 x = multiply(5,6)
 print(x)
+
+
+
+#bonus
+
+#Add two more functions, square and cube.
+#Make a function called square_n_times that 
+#takes two arguments, number and n. square 
+#the number n times and return the result.
+
+
+def square(a):
+	a*a
+
+def cube(a):
+	a**3
+
+def square_n_times(a,b):
+	a**b
+
+
+
+
+
