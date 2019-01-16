@@ -1,6 +1,7 @@
 
 #Headers
 # name, age, secretIdentity, powers, squadName, homeTown, formed, secretBase, active
+# 'r' means reader
 import csv
 import json
 with open('superheroes.json','r') as f:
@@ -21,6 +22,7 @@ for member in members:
 
 
 #create csv file
+# 'w' means writer
 with open('members.csv','w') as f:
 	writer = csv.writer(f)
 	header = ['name', 'age', 'secretIdentity', 'powers', 'squadName', 
@@ -35,6 +37,7 @@ with open('members.csv','w') as f:
 			member['age'], 
 			member['secretIdentity'], 
 			member['powers'], 
+			#below data is at the superhero level, not within each member
 			superheroes['squadName'], 
 			superheroes['homeTown'], 
 			superheroes['formed'], 
