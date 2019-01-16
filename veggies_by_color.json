@@ -1,0 +1,40 @@
+{
+  "purple": [
+    {
+      "name": "eggplant",
+      "length": "8",
+      "color": "purple"
+    }
+  ],
+  "red": [
+    {
+      "name": "tomato",
+      "length": "6",
+      "color": "red"
+    }
+  ],
+  "yellow": [
+    {
+      "name": "corn",
+      "length": "4",
+      "color": "yellow"
+    }
+  ],
+  "green": [
+    {
+      "name": "okra",
+      "length": "4",
+      "color": "green"
+    },
+    {
+      "name": "arugula",
+      "length": "7",
+      "color": "green"
+    },
+    {
+      "name": "broccoli",
+      "length": "8",
+      "color": "green"
+    }
+  ]
+}
