@@ -7,6 +7,8 @@ import json
 with open('superheroes.json','r') as f:
 	superheroes = json.load(f)
 
+
+
 #get the members
 members = superheroes['members']
 #print(members)
@@ -14,10 +16,17 @@ members = superheroes['members']
 #loop through each member 
 #for each member, get a list of the powers
 
-data=[]
+all_powers=[]
 
 for member in members:
-	print(member)
+	powers=member['powers']
+	for power in powers:
+		all_powers.append(power)
+
+#set makes list unique
+#set only works for lists
+#want to make into a list at the end
+print(list(set(all_powers)))
 
 
 
@@ -26,7 +35,7 @@ for member in members:
 with open('members.csv','w') as f:
 	writer = csv.writer(f)
 	header = ['name', 'age', 'secretIdentity', 'powers', 'squadName', 
-				'homeTown', 'formed', 'secretBase', 'active']
+				'homeTown', 'formed', 'secretBase', 'active','first power']
 	writer.writerow(header)
 
 	#loop through each member
@@ -42,8 +51,8 @@ with open('members.csv','w') as f:
 			superheroes['homeTown'], 
 			superheroes['formed'], 
 			superheroes['secretBase'], 
-			superheroes['active']
+			superheroes['active'],
+			member['powers'][0]
 		]
 		writer.writerow(row)
 
-print(data)
