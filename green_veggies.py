@@ -1,10 +1,10 @@
 import csv
-
 #open veggies.csv
 with open('veggies.csv','r') as f:
 	reader = csv.DictReader(f)
 	rows = list(reader)
 
+#put all the green veggies into an empty dataframe
 green_veggies=[]
 for row in rows:
  	if row['color']=='green':
@@ -12,8 +12,7 @@ for row in rows:
  		green_veggies.append(row)
 
 
-print(green_veggies)
-
+#put into a green veggies specific csv file
 with open('green_veggies.csv','w') as f:
 	writer = csv.writer(f)
 	header = ['name', 'length', 'color']
@@ -28,3 +27,7 @@ with open('green_veggies.csv','w') as f:
 		]
 		writer.writerow(row)
 
+
+#also make a json file
+import json
+print(json.dumps(green_veggies,indent=2))
